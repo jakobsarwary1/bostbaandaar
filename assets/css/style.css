@@ -468,7 +468,6 @@ ul li{
 		grid-template-rows: auto auto;
 		grid-template-areas: "img-1 img-1 img-1 img-1 img-1 img-1 img-1 img-2 img-2 img-2 img-2"
 							 "img-3 img-3 img-3 img-3 img-4 img-4 img-4 img-5 img-5 img-5 img-5";
-		padding-bottom: 10px;
 		border-bottom: 1px solid black;
 	}
 	.afg-grid{

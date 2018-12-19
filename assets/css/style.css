@@ -405,6 +405,7 @@ ul li{
 		text-align: center;
 		font-size: 2rem;
 		color: black;
+		width: 80%;
 		margin: auto;
 
 	}
@@ -723,6 +724,9 @@ ul li{
 		/* 	====================================
 			BOSTBAANDAAR / BIO / BIO.HTML
 			===================================*/
+			.bio-header{
+				width: 100%;
+			}
 			.grid-papu{
 				width: 100%;
 			}
@@ -820,6 +824,11 @@ ul li{
 			}
 		.grid-afg img, .grid-forg img{
 			height: 180px;
+		}
+		.flex-grid{
+			flex-flow: column nowrap;
+			justify-content: center;
+			align-content: center;
 		}
 		.afg-grid{
 			margin: 0%;

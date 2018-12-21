@@ -1,9 +1,9 @@
 *{
-	font-size: 18px;
+	font-size: 22px;
 	font-family: serif;
 	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 	text-align: right;
 	
 }
@@ -24,28 +24,29 @@ html{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 100% 0%;
+	padding: 10px 20px;
+	
 
 }
 #showcase-flexbox{
 	display: flex;
-	flex-direction: row-reverse;
+	flex-flow: row nowrap;
 	justify-content: space-between;
 
 }
 #showcase-flexbox h1{
 	color: white;
-	font-size: 3.5rem;
+	font-size: 3rem;
 	margin-top: 10px;
 }
 .clock{
-	align-self: flex-end;
 	font-family: 'digital-7', sans-serif;
 	text-shadow: rgb(255, 255, 255) 0px 0px 30px !important;
 	text-align: center;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	color: #33ff00;
 	background: #282828;
-	padding: 2 5;
+	padding: 2px 5px;
 }
 
 #lang-button{
@@ -59,7 +60,7 @@ html{
 	font-size: 0.6rem;
 	text-align: center;
 	background: white;
-	padding: 2 5;
+	padding: 2px 5px;
 	border-radius: 3px;
 	cursor: pointer;
 }
@@ -68,8 +69,6 @@ html{
 	background-color: #d4d4d4;
 }
 .searchbar{
-	display: flex;
-	justify-self: flex-end;
 	font-size: 1rem;
 	width: 32%;
 	padding: 5px 10px;
@@ -85,7 +84,7 @@ html{
  #holder, #home, #news, #jobs, #afghanistan, #education, #country, #nav-biography,
 #nav-find-location, #blog, .pad a span, .footer ul li span{
 	display: flex;
-	flex-flow: row-reverse nowrap;
+	flex-flow: row nowrap;
 	justify-content: center;
 	width: 100%;
 }
@@ -100,10 +99,10 @@ ul li{
 	display: block;
 	width: 100%;
 	text-transform: uppercase;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	font-weight: normal;
 	text-align: center;
-	margin-bottom: 20;
+	margin-bottom: 20px;
 }
 .nav-title{
 	color: white;
@@ -130,7 +129,7 @@ ul li{
 	transition: 0.1s;
 }
 #holder ul li span{
-	padding: 10;
+	padding: 10px;
 	border-bottom: 3px solid #333;
 }
 .pad > a:hover, .using > li:hover > a > span{
@@ -249,11 +248,13 @@ ul li{
 	padding: 20px;
 }
 #holder ul li > ul{
+	overflow: hidden;
 	position: absolute;
-	left: -9000;
+	left: -9000px;
 }
 #holder ul li:hover ul{
-	left: 0;
+	overflow: visible;
+	left: 0px;
 }
 /* .sub-con{
 	display: flex;
@@ -264,7 +265,7 @@ ul li{
 
 .sub-hol{
 	display: flex;
-	flex-flow: row-reverse nowrap;
+	flex-flow: row nowrap;
 	justify-content: center;
 	align-content: center;
 	width: 100%;
@@ -272,8 +273,7 @@ ul li{
 .sub-hol div ul li a{
 	display: block;
 	width: 100%;
-	margin-right: 10;
-	padding-right: 10;
+	padding: 0px 10px;
 	font-size: 1rem;
 	transition: 0.3s;
 	border-right: 2px solid #262626;
@@ -281,18 +281,19 @@ ul li{
 }
 .sub-right-box{
 	display: flex;
-	flex-flow: row-reverse nowrap;
+	flex-flow: row nowrap;
 	justify-content: center;
 	align-content: center;	
 }
 .sub-m{
-	margin: 0 15;
+	margin: 0px 10px;
 }
 .sub-m-box{
 	display: flex;
-	flex-flow: row-reverse nowrap;
+	flex-flow: row nowrap;
 	justify-content: center;
 	align-content: center;
+	padding: 0px 10px 0px 10px;
 	border-right: 1px solid #333;
 	border-left: 1px solid #333;
 		
@@ -300,7 +301,7 @@ ul li{
 
 .sub-left-box{
 	display: flex;
-	flex-flow: row-reverse nowrap;
+	flex-flow: row nowrap;
 	justify-content: center;
 	align-content: center;
 }
@@ -319,8 +320,8 @@ ul li{
 	main{
 		background: lightblue;
 		width: 90%;
-		margin: 20 auto;
-		padding: 20 20;
+		margin: 20px auto;
+		padding: 20px 20px;
 		border-top: none;
 	}
 	
@@ -336,12 +337,12 @@ ul li{
 .footer{
 	color: white;
 	background: #333;
-	padding-bottom: 5;
-	margin-top: 10;
+	padding-bottom: 5px;
+	margin-top: 10px;
 }
 .footer ul{
 	display: flex;
-	flex-flow: row-reverse nowrap;
+	flex-flow: row nowrap;
 	align-content: center;
 
 }
@@ -373,8 +374,8 @@ ul li{
 .footer p{
 	font-size: 1rem;
 	text-align: center;
-	margin: 0 auto;
-	padding: 10 10px;
+	margin: 0px auto;
+	padding: 10px 10px;
 
 }
 
@@ -385,7 +386,7 @@ ul li{
 	=======================================================================================*/
 
 	.index-main{
-		padding: 30 20;
+		padding: 30px 20px;
 	
 	}
 	
@@ -506,8 +507,8 @@ ul li{
 
 /* 	=======================================================================================
 	=======================================================================================
-			  BIOGRAPHY PAGE KINGS
-			  BOSBAANDAAR / BIO / AFHGANISTAN / KINGS / AFGHANISTAN-KING.HTML
+			  BIOGRAPHY PAGE LEADERS
+			  BOSBAANDAAR / BIO / AFHGANISTAN / LEADERS / AFGHANISTAN-LEADERS.HTML
 	=======================================================================================
 	=======================================================================================*/
 	.biography-box{
@@ -515,26 +516,38 @@ ul li{
 		flex-flow: row wrap;
 		justify-content: space-between;
 		border-top: 2px solid white;
-		padding: 20 0;
+		padding: 20px 0px;
 	}
 	.biography-box h1{
-		font-size: 1.5rem;
+		font-size: 2rem;
+	}
+	.biography-box .bio-names{
+		color: purple;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	.biography-box .bio-names:hover{
+		color: rgb(185, 0, 0);
+		text-decoration: underline;
 	}
 	.biography-box h2{
-		font-size: 1.2rem;
+		font-size: 1.5rem;
 	}
 	main :first-child{
 		border: none;
 	}
 	.text-table-box{
 		display: flex;
-		flex-flow: row-reverse nowrap;
+		flex-flow: row nowrap;
 		justify-content: center;
 		align-content: center;
 	}
 	.bio-text{
 		text-align: right;
-		padding: 20;
+		padding: 20px;
+	}
+	.bio-text p{
+		font-size: 1.2rem;
 	}
 	.bio-table {
 		display: flex;
@@ -558,16 +571,16 @@ ul li{
 		justify-content: space-around;
 	}
 	.bio-img{
-		height: 220;
+		height: 220px;
 		width: 180px;
 	}
 	.bio-img-flag{
-		height: 220;
+		height: 220px;
 		width: 280px;
 	}
 	.bio-img-caption{
 		text-align: center;
-		padding: 10;
+		padding: 10px;
 	}
 	.bio-text-box{
 		display: flex;
@@ -600,14 +613,14 @@ ul li{
 	.contact-bost-title h1{
 		text-align: center;
 		color: rgb(255, 255, 255);
-		padding: 10 20;
+		padding: 10px 20px;
 	}
 	
 	/* CONTACT FORM */
 	.contact-form{
 		background-color: #f2f2f2;
 		width: 80%;
-		margin: 10 auto;
+		margin: 10px auto;
 		padding: 10px;
 		border-radius: 8px 8px 50px 50px;
 	}
@@ -622,8 +635,8 @@ ul li{
 		z-index: 99;
 		/*position the autocomplete items to be the same width as the container:*/
 		top: 100%;
-		left: 0;
-		right: 0;
+		left: 0px;
+		right: 0px;
 	}
 	.autocomplete-items div {
 		padding: 5px;
@@ -762,7 +775,7 @@ ul li{
 			===================================*/
 		
 		.grid-papu{
-			gap: 12px;
+			gap: 20px;
 		}
 		.grid-papu img{
 			height: 200px;
@@ -794,7 +807,7 @@ ul li{
 	=======================================================================================*/
 	@media screen and (max-width: 980px) {
 		*{
-			font-size: 16px;
+			font-size: 18px;
 		}
 		main{
 			width: 90%;
@@ -851,7 +864,7 @@ ul li{
 	=======================================================================================*/
 	@media screen and (max-width: 768px) {
 		*{
-			font-size: 12px;
+			font-size: 10px;
 		}
 		main{
 			width: 95%;
@@ -904,21 +917,21 @@ ul li{
 			font-size: 8px;
 		}
 		#holder ul li span{
-			padding: 5 2;
+			padding: 5px 2px;
 		}
 		.bio-text{
-			padding: 10;
+			padding: 10px;
 		}
 		.text-table-box{
 			flex-flow: column nowrap;
 		}
 		.bio-img{
-			height: 100;
-			width: 90;
+			height: 100px;
+			width: 90px;
 		}
 		.bio-img-flag{
-			height: 100;
-			width: 140;
+			height: 100px;
+			width: 140px;
 		}
 		.bio-table {
 			width: 90%;

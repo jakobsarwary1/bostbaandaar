@@ -1,5 +1,5 @@
 *{
-	font-size: 20px;
+	font-size: 18px;
 	font-family: serif;
 	box-sizing: border-box;
 	margin: 0px;
@@ -522,8 +522,6 @@ ul li{
 		flex-flow: row wrap;
 		justify-content: space-between;
 		background: #e6e6e6;
-		padding-top: 20px;
-		padding-bottom: 20px;
 	}
 	.biography-box h1{
 		font-size: 2rem;
@@ -540,9 +538,11 @@ ul li{
 	}
 	.biography-box h2{
 		font-size: 1.7rem;
+		margin-top: 10px;
 	}
 	.biography-box h3{
 		font-size: 1.4rem;
+		margin-top: 10px;
 	}
 	main :first-child{
 		border: none;
@@ -559,26 +559,26 @@ ul li{
 		background: white;
 		text-align: right;
 		padding: 20px;
+		margin: 20px 0px;
 	}
 	.bio-text p{
 		font-size: 1.5rem;
 	}
 	.bio-table {
-		background: white;
 		display: flex;
+		background: white;
 		flex-flow: column nowrap;
 		width: 100%;
+		margin: 20px 0px;
 
 	}
 	.bio-table th{
 		text-align: right;
-		background: rgb(255, 255, 255);
 		border: 1px solid black;
 		padding: 5px 10px;
 	}
 	.bio-table td{
 		text-align: right;
-		background: rgb(255, 255, 255);
 		border: 1px solid black;
 		padding: 5px 10px;
 	}
@@ -830,10 +830,10 @@ ul li{
 	=======================================================================================*/
 	@media screen and (max-width: 980px) {
 		*{
-			font-size: 18px;
+			font-size: 16px;
 		}
 		main{
-			width: 90%;
+			width: 95%;
 		}
 				
 		/* 	====================================
@@ -850,6 +850,13 @@ ul li{
 		.bio-table {
 			justify-self: center;
 			align-self: center;
+			background: #e6e6e6;
+		}
+		.bio-table th{
+			background: #e6e6e6;
+		}
+		.bio-table td{
+			background: #e6e6e6;
 		}
 				
 		/* 	====================================
@@ -900,7 +907,7 @@ ul li{
 	=======================================================================================*/
 	@media screen and (max-width: 768px) {
 		*{
-			font-size: 16px;
+			font-size: 14px;
 		}
 		.nav-title{
 			font-size: 0.7rem;
@@ -909,7 +916,7 @@ ul li{
 			font-size: 0.7rem;
 		}
 		main{
-			width: 95%;
+			width: 100%;
 		}
 				
 		/* 	====================================
@@ -956,7 +963,7 @@ ul li{
 	=======================================================================================*/
 	@media screen and (max-width: 540px) {
 		*{
-			font-size: 14px;
+			font-size: 12px;
 		}
 		#holder ul li span{
 			padding: 5px 2px;
@@ -1005,7 +1012,7 @@ ul li{
 	=======================================================================================*/
 	@media screen and (max-width: 360px) {
 		*{
-			font-size: 12px;
+			font-size: 10px;
 		}
 				
 		/* 	====================================

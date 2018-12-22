@@ -1,5 +1,5 @@
 *{
-	font-size: 22px;
+	font-size: 18px;
 	font-family: serif;
 	box-sizing: border-box;
 	margin: 0px;
@@ -548,11 +548,13 @@ ul li{
 		padding: 20px;
 	}
 	.bio-text p{
-		font-size: 1.2rem;
+		font-size: 1.5rem;
 	}
 	.bio-table {
 		display: flex;
 		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-content: center;
 	}
 	.bio-table th{
 		text-align: right;
@@ -865,7 +867,7 @@ ul li{
 	=======================================================================================*/
 	@media screen and (max-width: 768px) {
 		*{
-			font-size: 10px;
+			font-size: 16px;
 		}
 		main{
 			width: 95%;

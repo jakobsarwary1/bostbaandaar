@@ -558,8 +558,11 @@ ul li{
 	.bio-table {
 		display: flex;
 		flex-flow: column nowrap;
-		justify-content: flex-start;
+		justify-self: flex-start;
+		align-self: flex-start;
+		justify-content: center;
 		align-content: center;
+
 	}
 	.bio-table th{
 		text-align: right;
@@ -837,8 +840,6 @@ ul li{
 		}
 		.bio-table {
 			width: 100%;
-			justify-content: center;
-			align-content: center;
 		}
 				
 		/* 	====================================

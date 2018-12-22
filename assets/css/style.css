@@ -49,6 +49,7 @@ html{
 	background: #282828;
 	padding: 2px 5px;
 	margin-right: 5px;
+	direction: ltr;
 }
 
 #lang-button{

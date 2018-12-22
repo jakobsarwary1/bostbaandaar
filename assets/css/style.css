@@ -560,6 +560,7 @@ ul li{
 		flex-flow: column nowrap;
 		justify-content: flex-start;
 		align-content: center;
+		margin: auto;
 	}
 	.bio-table th{
 		text-align: right;

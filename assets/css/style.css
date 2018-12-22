@@ -8,7 +8,7 @@
 	
 }
 html{
-	background: white;
+	background: lightblue;
 }
 @font-face{
 	font-family:'digital-7';
@@ -326,7 +326,7 @@ ul li{
 	=======================================================================================
 	=======================================================================================*/
 	main{
-		background: lightblue;
+		background: #e6e6e6;
 		width: 90%;
 		margin: 20px auto;
 		padding: 20px 20px;
@@ -408,13 +408,13 @@ ul li{
 	
 	.main-grid{
 		margin: auto;
-		width: 100%;
+		width: 80%;
+		background: white;
 	}
 	.bio-header{
 		text-align: center;
 		font-size: 2rem;
 		color: black;
-		width: 80%;
 		margin: auto;
 
 	}
@@ -431,13 +431,12 @@ ul li{
 	.grid-papu{
 		display: grid;
 		grid-gap: 15px;
-		width: 80%;
+		width: 100%;
 		margin: auto;
 		grid-template-columns: auto auto;
 		grid-template-rows: auto auto;
 		grid-template-areas: "img-1 img-1 img-1 img-1 img-1 img-1 img-1 img-1 img-2 img-2 img-2"
 							 "img-3 img-3 img-3 img-3 img-4 img-4 img-4 img-4 img-5 img-5 img-5";
-		border-bottom: 1px solid black;
 	}
 	.grid-papu img{
 		height: 400px;
@@ -453,7 +452,7 @@ ul li{
 	}
 	.img-3{
 		grid-area: img-3;
-		background: yellow;
+		background: green;
 	}
 	.img-4{
 		grid-area: img-4;
@@ -461,14 +460,14 @@ ul li{
 	}
 	.img-5{
 		grid-area: img-5;
-		background: blue;
+		background: black;
 	}
 	.flex-grid{
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-between;
 		align-content: center;
-		width: 80%;
+		width: 100%;
 		margin: auto;
 	}
 	.grid-afg, .grid-forg{
@@ -478,7 +477,6 @@ ul li{
 		grid-template-rows: auto auto;
 		grid-template-areas: "img-1 img-1 img-1 img-1 img-1 img-1 img-1 img-2 img-2 img-2 img-2"
 							 "img-3 img-3 img-3 img-3 img-4 img-4 img-4 img-5 img-5 img-5 img-5";
-		border-bottom: 1px solid black;
 	}
 	.afg-grid{
 		margin-left: 5px;
@@ -502,7 +500,7 @@ ul li{
 	}
 	.img-3{
 		grid-area: img-3;
-		background: yellow;
+		background: green;
 	}
 	.img-4{
 		grid-area: img-4;
@@ -510,7 +508,7 @@ ul li{
 	}
 	.img-5{
 		grid-area: img-5;
-		background: blue;
+		background: black;
 	}
 
 /* 	=======================================================================================
@@ -523,11 +521,13 @@ ul li{
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
-		border-top: 2px solid white;
-		padding: 20px 0px;
+		background: #e6e6e6;
+		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 	.biography-box h1{
 		font-size: 2rem;
+		margin-top: 10px;
 	}
 	.biography-box .bio-names{
 		color: purple;
@@ -539,18 +539,24 @@ ul li{
 		text-decoration: underline;
 	}
 	.biography-box h2{
-		font-size: 1.5rem;
+		font-size: 1.7rem;
+	}
+	.biography-box h3{
+		font-size: 1.4rem;
 	}
 	main :first-child{
 		border: none;
+		padding-top: 0;
 	}
 	.text-table-box{
+		width: 100%;
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: center;
 		align-content: center;
 	}
 	.bio-text{
+		background: white;
 		text-align: right;
 		padding: 20px;
 	}
@@ -558,12 +564,10 @@ ul li{
 		font-size: 1.5rem;
 	}
 	.bio-table {
+		background: white;
 		display: flex;
 		flex-flow: column nowrap;
-		justify-self: flex-start;
-		align-self: flex-start;
-		justify-content: center;
-		align-content: center;
+		width: 100%;
 
 	}
 	.bio-table th{
@@ -750,6 +754,9 @@ ul li{
 		/* 	====================================
 			BOSTBAANDAAR / BIO / BIO.HTML
 			===================================*/
+			.main-grid{
+				width: 85%;
+			}
 			.bio-header{
 				width: 100%;
 			}
@@ -787,6 +794,9 @@ ul li{
 			BOSTBAANDAAR / BIO / BIO.HTML
 			===================================*/
 		
+		.main-grid{
+			width: 90%;
+		}
 		.grid-papu{
 			gap: 20px;
 		}
@@ -831,10 +841,6 @@ ul li{
 			/ LEADERS.HTML
 			===================================*/
 
-		.biography-box{
-			margin: 0%;
-			padding: 0%;
-		}
 		.text-table-box{
 			flex-flow: column nowrap;
 			justify-content: center;
@@ -858,6 +864,9 @@ ul li{
 		/* 	====================================
 			BOSTBAANDAAR / BIO / BIO.HTML
 			===================================*/
+		.main-grid{
+			width: 95%;
+		}
 
 		.grid-papu img{
 			height: 180px;
@@ -907,10 +916,6 @@ ul li{
 			BOSTBAANDAAR / BIO / AFGHANISTAN / LEADERS 
 			/ LEADERS.HTML
 			===================================*/
-		.biography-box{
-			margin: 0%;
-			padding: 0%;
-		}
 				
 		/* 	====================================
 			BOSTBAANDAAR / CONTACT
@@ -923,6 +928,9 @@ ul li{
 		/* 	====================================
 			BOSTBAANDAAR / BIO / BIO.HTML
 			===================================*/
+		.main-grid{
+			width: 100%;
+		}
 		.grid-papu{
 			gap: 10px;
 		}
@@ -958,9 +966,6 @@ ul li{
 			BOSTBAANDAAR / BIO / AFGHANISTAN / LEADERS 
 			/ LEADERS.HTML
 			===================================*/
-		.bio-text{
-			padding: 10px;
-		}
 		.bio-img{
 			height: 150px;
 			width: 130px;
@@ -1007,9 +1012,6 @@ ul li{
 			BOSTBAANDAAR / BIO / AFGHANISTAN / LEADERS 
 			/ LEADERS.HTML
 			===================================*/
-		.bio-text{
-			padding: 10px;
-		}
 		.bio-img{
 			height: 120px;
 			width: 100px;

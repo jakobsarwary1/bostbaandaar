@@ -474,11 +474,11 @@ ul li{
 		border-bottom: 1px solid black;
 	}
 	.afg-grid{
-		margin-right: 5px;
+		margin-left: 5px;
 		width: 100%;
 	}
 	.forg-grid{
-		margin-left: 5px;
+		margin-right: 5px;
 		width: 100%;
 	}
 	.grid-afg img, .grid-forg img{
@@ -791,10 +791,10 @@ ul li{
 			height: 150px;
 		}
 		.afg-grid{
-			margin-right: 10px;
+			margin-left: 10px;
 		}
 		.forg-grid{
-			margin-left: 10px;
+			margin-right: 10px;
 		}
 	}
 

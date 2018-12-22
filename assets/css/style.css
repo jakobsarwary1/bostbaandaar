@@ -1,5 +1,5 @@
 *{
-	font-size: 18px;
+	font-size: 20px;
 	font-family: serif;
 	box-sizing: border-box;
 	margin: 0px;
@@ -24,7 +24,7 @@ html{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 100% 0%;
-	padding: 10px 20px;
+	padding: 10px;
 	
 
 }
@@ -37,7 +37,7 @@ html{
 #showcase-flexbox h1{
 	color: white;
 	font-size: 3rem;
-	margin-top: 10px;
+	margin-right: 10px;
 }
 .clock{
 	font-family: 'digital-7', sans-serif;
@@ -47,6 +47,7 @@ html{
 	color: #33ff00;
 	background: #282828;
 	padding: 2px 5px;
+	margin-right: 10px;
 }
 
 #lang-button{
@@ -57,7 +58,7 @@ html{
 	
 }
 #lang-button button{
-	font-size: 0.6rem;
+	font-size: 0.8rem;
 	text-align: center;
 	background: white;
 	padding: 2px 5px;
@@ -105,6 +106,7 @@ ul li{
 	margin-bottom: 20px;
 }
 .nav-title{
+	font-size: 1rem;
 	color: white;
 	text-align: center;
 }
@@ -129,7 +131,7 @@ ul li{
 	transition: 0.1s;
 }
 #holder ul li span{
-	padding: 10px;
+	padding: 10px 0px;
 	border-bottom: 3px solid #333;
 }
 .pad > a:hover, .using > li:hover > a > span{
@@ -579,7 +581,7 @@ ul li{
 	}
 	.bio-img-flag{
 		height: 220px;
-		width: 280px;
+		width: 300px;
 	}
 	.bio-img-caption{
 		text-align: center;
@@ -625,7 +627,7 @@ ul li{
 		width: 80%;
 		margin: 10px auto;
 		padding: 10px;
-		border-radius: 8px 8px 50px 50px;
+		border-radius: 8px;
 	}
 	.autocomplete{
 		position: relative;
@@ -680,12 +682,12 @@ ul li{
 	
 	.contact-bost-social-links-grid{
 		display: grid;
+		gap: 10px;
 		justify-content: center;
 		grid-template-columns: auto auto auto auto auto auto;
 	}
 	.contact-bost-social-links-grid div a {
 		text-align: center;
-		padding: 10px;
 		}
 	
 	
@@ -815,6 +817,12 @@ ul li{
 		main{
 			width: 90%;
 		}
+				
+		/* 	====================================
+			BOSTBAANDAAR / BIO / AFGHANISTAN / LEADERS 
+			/ LEADERS.HTML
+			===================================*/
+
 		.biography-box{
 			margin: 0%;
 			padding: 0%;
@@ -823,10 +831,17 @@ ul li{
 			flex-flow: column nowrap;
 		}
 		.bio-table {
-			width: 90%;
-			justify-self: center;
-			align-self: center;
+			width: 100%;
+			margin: auto;
+			justify-content: center;
+			align-content: center;
 		}
+				
+		/* 	====================================
+			BOSTBAANDAAR / CONTACT 
+			/ CONTACT.HTML
+			===================================*/
+
 		/* Contact Form */
 		.contact-form{
 			width: 100%;
@@ -869,22 +884,29 @@ ul li{
 		*{
 			font-size: 16px;
 		}
+		.nav-title{
+			font-size: 0.7rem;
+		}
+		#lang-button button{
+			font-size: 0.7rem;
+		}
 		main{
 			width: 95%;
 		}
+				
+		/* 	====================================
+			BOSTBAANDAAR / BIO / AFGHANISTAN / LEADERS 
+			/ LEADERS.HTML
+			===================================*/
 		.biography-box{
 			margin: 0%;
 			padding: 0%;
 		}
-		.text-table-box{
-			flex-flow: column nowrap;
-		}
-		.bio-table {
-			width: 90%;
-			justify-self: center;
-			align-self: center;
-		}
-		/* Contact Form */
+				
+		/* 	====================================
+			BOSTBAANDAAR / CONTACT
+			 / CONTACT.HTML
+			===================================*/
 		.contact-form{
 			width: 100%;
 		}
@@ -912,34 +934,31 @@ ul li{
 
 /* 	=======================================================================================
 	=======================================================================================
-			  MEDIA FOR PHONES ... 480px
+			  MEDIA FOR PHONES ... 540px
 	=======================================================================================
 	=======================================================================================*/
 	@media screen and (max-width: 540px) {
 		*{
-			font-size: 8px;
+			font-size: 14px;
 		}
 		#holder ul li span{
 			padding: 5px 2px;
 		}
+				
+		/* 	====================================
+			BOSTBAANDAAR / BIO / AFGHANISTAN / LEADERS 
+			/ LEADERS.HTML
+			===================================*/
 		.bio-text{
 			padding: 10px;
 		}
-		.text-table-box{
-			flex-flow: column nowrap;
-		}
 		.bio-img{
-			height: 100px;
-			width: 90px;
+			height: 150px;
+			width: 130px;
 		}
 		.bio-img-flag{
-			height: 100px;
-			width: 140px;
-		}
-		.bio-table {
-			width: 90%;
-			justify-self: center;
-			align-self: center;
+			height: 150px;
+			width: 200px;
 		}
 		/* 	====================================
 			BOSTBAANDAAR / BIO / BIO.HTML
@@ -959,8 +978,44 @@ ul li{
 		.afg-grid{
 			margin: 0%;
 		}
-		/* Contact Form */
-		.contact-form{
-			width: 100%;
+				
+		/* 	====================================
+			BOSTBAANDAAR / CONTACT 
+			/ CONTACT.HTML
+			===================================*/
+	}
+	/* 	=======================================================================================
+	=======================================================================================
+			  MEDIA FOR PHONES ... 480px
+	=======================================================================================
+	=======================================================================================*/
+	@media screen and (max-width: 360px) {
+		*{
+			font-size: 12px;
+		}
+				
+		/* 	====================================
+			BOSTBAANDAAR / BIO / AFGHANISTAN / LEADERS 
+			/ LEADERS.HTML
+			===================================*/
+		.bio-text{
+			padding: 10px;
+		}
+		.bio-img{
+			height: 120px;
+			width: 100px;
+		}
+		.bio-img-flag{
+			height: 120px;
+			width: 160px;
+		}
+		/* 	====================================
+			BOSTBAANDAAR / BIO / BIO.HTML
+			===================================*/
+				
+		/* 	====================================
+			BOSTBAANDAAR / CONTACT 
+			/ CONTACT.HTML
+			===================================*/
 		}
 	}

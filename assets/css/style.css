@@ -9,7 +9,6 @@
 }
 html{
 	background: white;
-	overflow-x: hidden;
 }
 @font-face{
 	font-family:'digital-7';
@@ -840,9 +839,11 @@ ul li{
 			flex-flow: column nowrap;
 			justify-content: center;
 			align-content: center;
+			width: 100%;
 		}
 		.bio-table {
-			width: 100%;
+			justify-self: center;
+			align-self: center;
 		}
 				
 		/* 	====================================

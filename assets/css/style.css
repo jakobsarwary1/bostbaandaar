@@ -248,13 +248,14 @@ ul li{
 	padding: 20px;
 }
 #holder ul li > ul{
-	overflow: hidden;
 	position: absolute;
-	left: -9000px;
+	left: 0px;
+	transform: perspective(1000px) rotatex(-90deg);
 }
 #holder ul li:hover ul{
 	overflow: visible;
 	left: 0px;
+	transform: perspective(1000px) rotatex(0deg);
 }
 /* .sub-con{
 	display: flex;

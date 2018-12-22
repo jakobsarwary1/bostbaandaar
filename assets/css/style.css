@@ -55,6 +55,7 @@ html{
 	grid-template-columns: auto auto auto;
 	justify-content: flex-start;
 	align-content: flex-start;
+	direction: ltr;
 	
 }
 #lang-button button{

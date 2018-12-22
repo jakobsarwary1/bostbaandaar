@@ -408,7 +408,7 @@ ul li{
 	
 	.main-grid{
 		margin: auto;
-		width: 80%;
+		width: 85%;
 		background: white;
 	}
 	.bio-header{
@@ -479,11 +479,11 @@ ul li{
 							 "img-3 img-3 img-3 img-3 img-4 img-4 img-4 img-5 img-5 img-5 img-5";
 	}
 	.afg-grid{
-		margin-left: 5px;
+		margin-left: 10px;
 		width: 100%;
 	}
 	.forg-grid{
-		margin-right: 5px;
+		margin-right: 10px;
 		width: 100%;
 	}
 	.grid-afg img, .grid-forg img{

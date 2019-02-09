@@ -22,6 +22,9 @@ html{
 #showcase{
 	background:  url(../img/afghanistan-flag-4k-grunge-flag-of-afghanistan-asia.jpg);
 	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 	background-position: 100% 0%;
 	padding: 10px;
@@ -94,7 +97,12 @@ html{
 	justify-content: center;
 	width: 100%;
 }
-ul li{
+#container{
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0px;
+}
+#container ul li{
 	list-style-type: none;
 }
 #wrapper{
@@ -355,6 +363,7 @@ ul li{
 
 }
 .footer ul li{
+	list-style: none;
 	width: 100%;
 }
 .footer ul li a{
@@ -517,11 +526,11 @@ ul li{
 			  BOSBAANDAAR / BIO / AFHGANISTAN / LEADERS / AFGHANISTAN-LEADERS.HTML
 	=======================================================================================
 	=======================================================================================*/
-	.biography-box{
+	.bio-main{
 		display: flex;
 		flex-flow: row wrap;
-		justify-content: space-between;
-		background: #e6e6e6;
+		justify-content: space-around;
+		justify-items: center;
 	}
 	.biography-box h1{
 		font-size: 2rem;
@@ -536,40 +545,27 @@ ul li{
 		color: rgb(185, 0, 0);
 		text-decoration: underline;
 	}
-	.biography-box h2{
-		font-size: 1.7rem;
-		margin-top: 10px;
-	}
-	.biography-box h3{
-		font-size: 1.4rem;
-		margin-top: 10px;
-	}
 	main :first-child{
 		border: none;
 		padding-top: 0;
 	}
 	.text-table-box{
-		width: 100%;
 		display: flex;
-		flex-flow: row nowrap;
 		justify-content: center;
 		align-content: center;
+		margin: 20px 0px 0px 0px;
 	}
-	.bio-text{
+	.bio-text-1{
 		background: white;
-		text-align: right;
 		padding: 20px;
-		margin: 20px 0px;
 	}
-	.bio-text p{
-		font-size: 1.5rem;
+	.bio-text-1 p{
+		font-size: 1.2rem;
 	}
 	.bio-table {
 		display: flex;
 		background: white;
 		flex-flow: column nowrap;
-		width: 100%;
-		margin: 20px 0px;
 
 	}
 	.bio-table th{
@@ -585,37 +581,103 @@ ul li{
 	.bio-img-box{
 		display: flex;
 		flex-flow: row nowrap;
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 	.bio-img{
 		height: 220px;
 		width: 180px;
+		margin-left: 5px;
 	}
 	.bio-img-flag{
 		height: 220px;
 		width: 300px;
+		margin-right: 5px;
 	}
 	.bio-img-caption{
 		text-align: center;
 		padding: 10px;
+	}
+	.bio-more a{
+		display: block;
+		text-decoration: none;
+		color: blue;
+		font-size: 1.5rem;
+		width: 100%;
+		padding: 10px 20px;
+	}
+	.bio-more a:hover{
+		color: rgb(185, 0, 0);
+		text-decoration: underline;
+		font-weight: bolder;
+
 	}
 	.bio-text-box{
 		display: flex;
 		flex-flow: row wrap;
 		text-align: right;
 		width: 100%;
+		background: white;
+		padding: 20px 20px 20px 20px;
 	}
 	
 	.a-tags{
-		color: purple;
+		color: blue;
 		text-decoration: none;
 	}
 	.a-tags:hover{
 		color: rgb(185, 0, 0);
 		text-decoration: underline;
-		font-weight: bold;
 	}
 	
+
+
+
+
+
+
+/* 	=======================================================================================
+	=======================================================================================
+				THE EVRY SINGLE LEADER PAGE
+			  	BOSBAANDAAR / BIO / AFHGANISTAN / LEADERS / XXX.HTML
+	=======================================================================================
+	=======================================================================================*/
+	.leaders-contents{
+		background: #e6e6e6;
+	}
+	.leaders-contents ul{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		list-style-type: none;
+		padding: 0px 5px;
+	}
+	.leaders-contents li{
+		display: block;
+	}
+	.leaders-contents ul li a{
+		text-decoration: none;
+		color: blue;
+		padding: 0px 5px;
+	}
+	.leaders-contents ul a:hover{
+		color: red;
+	}
+	.bio-back{
+		color: red;
+	}
+
+	.bio-text-box h2{
+		font-size: 1.7rem;
+		margin: 10px 0px;
+	}
+	.bio-text p{
+		font-size: 1rem;
+	}
+	.bio-text ul{
+		margin: 10px 20px;
+	}
+
+
 
 
 
@@ -695,10 +757,20 @@ ul li{
 	.contact-bost-social-links-grid{
 		display: grid;
 		gap: 10px;
-		justify-content: center;
 		grid-template-columns: auto auto auto auto auto auto;
+		justify-content: center;
+		align-content: center;
+		color: #262626;
 	}
 	.contact-bost-social-links-grid div a {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		width: 200%;
+		height: 200%;
+		font-size: 1rem;
+		background: #ccc;
+		text-decoration: none;
 		text-align: center;
 		}
 	
@@ -716,71 +788,38 @@ ul li{
 
 /* 	=======================================================================================
 	=======================================================================================
-			  MEDIA FOR PHONES ... 1280px
+			  MEDIA FOR PHONES ... 1600px
 	=======================================================================================
 	=======================================================================================*/
 	@media screen and (max-width: 1600px) {
+	
+	
 		
-		
-		/* 	====================================
-			BOSTBAANDAAR / BIO / BIO.HTML
-			===================================*/
-			
-			.grid-papu img{
-				height: 300px;
-				}
-			.flex-grid{
-				display: flex;
-				flex-flow: row nowrap;
-				justify-content: space-between;
-				align-content: center;
-			}
-			.grid-afg img, .grid-forg img{
-				height: 220px;
-			}
+	/* 	====================================
+		BOSTBAANDAAR / BIO / BIO.HTML
+		===================================*/
+
+		.main-grid{
+			width: 85%;
 		}
-	
-	
-	
-
-/* 	=======================================================================================
-	=======================================================================================
-			  MEDIA FOR PHONES ... 1400px
-	=======================================================================================
-	=======================================================================================*/
-	@media screen and (max-width: 1600px) {
-		
-		
-		/* 	====================================
-			BOSTBAANDAAR / BIO / BIO.HTML
-			===================================*/
-			.main-grid{
-				width: 85%;
-			}
-			.bio-header{
-				width: 100%;
-			}
-			.grid-papu{
-				width: 100%;
-			}
-			.grid-papu img{
-				height: 250px;
-				width: 100%;
-				}
-			.flex-grid{
-				width: 100%;
-			}
-			.grid-afg img, .grid-forg img{
-				height: 200px;
-			}
+		.bio-header{
+			width: 100%;
 		}
+		.grid-papu{
+			width: 100%;
+		}
+		.grid-papu img{
+			height: 250px;
+			width: 100%;
+			}
+		.flex-grid{
+			width: 100%;
+		}
+		.grid-afg img, .grid-forg img{
+			height: 200px;
+		}
+	}	
 	
-	
-	
-
-
-
-
 
 /* 	=======================================================================================
 	=======================================================================================
@@ -788,12 +827,14 @@ ul li{
 	=======================================================================================
 	=======================================================================================*/
 	@media screen and (max-width: 1280px) {
-		
-		
-		/* 	====================================
-			BOSTBAANDAAR / BIO / BIO.HTML
-			===================================*/
-		
+		*{
+			font-size: 16px;
+		}
+	
+	/* 	====================================
+		BOSTBAANDAAR / BIO / BIO.HTML
+		===================================*/
+	
 		.main-grid{
 			width: 90%;
 		}
@@ -818,6 +859,34 @@ ul li{
 		.forg-grid{
 			margin-right: 10px;
 		}
+			
+	/* 	====================================
+		BOSTBAANDAAR / BIO / AFGHANISTAN / LEADERS 
+		/ LEADERS.HTML
+		===================================*/
+
+		.text-table-box{
+			flex-flow: column nowrap;
+			justify-content: center;
+			align-content: center;
+			width: 100%;
+		}
+		.bio-table {
+			justify-self: center;
+			align-self: center;
+			margin: 0px;
+		}
+
+		.bio-img{
+			height: 180px;
+			width: 140px;
+		}
+		.bio-img-flag{
+			height: 180px;
+			width: 260px;
+
+
+		}
 	}
 
 
@@ -830,47 +899,28 @@ ul li{
 	=======================================================================================*/
 	@media screen and (max-width: 980px) {
 		*{
-			font-size: 16px;
+			font-size: 14px;
 		}
 		main{
 			width: 95%;
 		}
 				
-		/* 	====================================
-			BOSTBAANDAAR / BIO / AFGHANISTAN / LEADERS 
-			/ LEADERS.HTML
-			===================================*/
+	/* 	====================================
+		BOSTBAANDAAR / CONTACT 
+		/ CONTACT.HTML
+		===================================*/
 
-		.text-table-box{
-			flex-flow: column nowrap;
-			justify-content: center;
-			align-content: center;
-			width: 100%;
-		}
-		.bio-table {
-			justify-self: center;
-			align-self: center;
-			background: #e6e6e6;
-		}
-		.bio-table th{
-			background: #e6e6e6;
-		}
-		.bio-table td{
-			background: #e6e6e6;
-		}
-				
-		/* 	====================================
-			BOSTBAANDAAR / CONTACT 
-			/ CONTACT.HTML
-			===================================*/
+	/* Contact Form */
 
-		/* Contact Form */
 		.contact-form{
 			width: 100%;
 		}	
-		/* 	====================================
-			BOSTBAANDAAR / BIO / BIO.HTML
-			===================================*/
+
+
+	/* 	====================================
+		BOSTBAANDAAR / BIO / BIO.HTML
+		===================================*/
+
 		.main-grid{
 			width: 95%;
 		}
@@ -907,7 +957,7 @@ ul li{
 	=======================================================================================*/
 	@media screen and (max-width: 768px) {
 		*{
-			font-size: 14px;
+			font-size: 12px;
 		}
 		.nav-title{
 			font-size: 0.7rem;
@@ -918,23 +968,29 @@ ul li{
 		main{
 			width: 100%;
 		}
-				
-		/* 	====================================
-			BOSTBAANDAAR / BIO / AFGHANISTAN / LEADERS 
-			/ LEADERS.HTML
-			===================================*/
-				
-		/* 	====================================
-			BOSTBAANDAAR / CONTACT
-			 / CONTACT.HTML
-			===================================*/
+		.search-input{
+			width: 50%;
+		}
+		
+			
+	/* 	====================================
+		BOSTBAANDAAR / BIO / AFGHANISTAN / LEADERS 
+		/ LEADERS.HTML
+		===================================*/
+			
+	/* 	====================================
+		BOSTBAANDAAR / CONTACT
+			/ CONTACT.HTML
+		===================================*/
+
 		.contact-form{
 			width: 100%;
 		}
-				
-		/* 	====================================
-			BOSTBAANDAAR / BIO / BIO.HTML
-			===================================*/
+					
+	/* 	====================================
+		BOSTBAANDAAR / BIO / BIO.HTML
+		===================================*/
+
 		.main-grid{
 			width: 100%;
 		}
@@ -963,27 +1019,17 @@ ul li{
 	=======================================================================================*/
 	@media screen and (max-width: 540px) {
 		*{
-			font-size: 12px;
+			font-size: 10px;
 		}
 		#holder ul li span{
 			padding: 5px 2px;
 		}
-				
-		/* 	====================================
-			BOSTBAANDAAR / BIO / AFGHANISTAN / LEADERS 
-			/ LEADERS.HTML
-			===================================*/
-		.bio-img{
-			height: 150px;
-			width: 130px;
-		}
-		.bio-img-flag{
-			height: 150px;
-			width: 200px;
-		}
+
+		
 		/* 	====================================
 			BOSTBAANDAAR / BIO / BIO.HTML
 			===================================*/
+
 		.grid-papu{
 			gap: 5px;
 		}
@@ -1004,15 +1050,21 @@ ul li{
 			BOSTBAANDAAR / CONTACT 
 			/ CONTACT.HTML
 			===================================*/
+
+
+
+
 	}
+
+
 	/* 	=======================================================================================
-	=======================================================================================
-			  MEDIA FOR PHONES ... 480px
-	=======================================================================================
-	=======================================================================================*/
+		=======================================================================================
+				MEDIA FOR PHONES ... 480px
+		=======================================================================================
+		=======================================================================================*/
 	@media screen and (max-width: 360px) {
 		*{
-			font-size: 10px;
+			font-size: 8px;
 		}
 				
 		/* 	====================================

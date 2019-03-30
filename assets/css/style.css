@@ -7,7 +7,9 @@
 	
 }
 html{
-	background: rgba(29, 118, 201, 0.603);
+	background: rgba(77, 158, 233, 0.329);
+	width: 80%;
+	margin: 0px auto;
 }
 @font-face{
 	font-family:'digital-7';
@@ -281,14 +283,14 @@ html{
 .sub-hol{
 	display: flex;
 	flex-flow: row nowrap;
-	justify-content: space-around;
+	justify-content: center;
 	align-content: center;
 	width: 100%;
 }
 .sub-hol div ul li a{
 	display: block;
 	width: 100%;
-	padding: 0px;
+	padding: 0px 10px;
 	font-size: 1rem;
 	transition: 0.3s;
 	border-right: 2px solid #262626;
@@ -308,7 +310,7 @@ html{
 	flex-flow: row nowrap;
 	justify-content: center;
 	align-content: center;
-	padding: 0px 5px;
+	padding: 0px 10px 0px 10px;
 	border-right: 1px solid #333;
 	border-left: 1px solid #333;
 		
@@ -334,7 +336,7 @@ html{
 	=======================================================================================*/
 	main{
 		background: #e6e6e6;
-		width: 90%;
+		width: 100%;
 		margin: 0px auto;
 		padding: 20px 20px;
 		border-top: none;
@@ -416,14 +418,17 @@ html{
 	
 	.main-grid{
 		margin: auto;
-		width: 85%;
+		width: 100%;
 		background: white;
 	}
 	.bio-header{
+		display: block;
+		background: #1CA6E0;
 		text-align: center;
 		font-size: 2rem;
 		color: black;
 		margin: auto;
+		padding: 20px 50px 5px 50px;
 
 	}
 	.main-grid a{
@@ -552,7 +557,6 @@ html{
 		display: flex;
 		justify-content: center;
 		align-content: center;
-		margin: 20px 0px 0px 0px;
 	}
 	.bio-text-1{
 		background: white;
@@ -641,25 +645,33 @@ html{
 	=======================================================================================
 	=======================================================================================*/
 	.leaders-contents{
-		background: #e6e6e6;
+		background: #1CA6E0;
+		margin: auto;
+		
+		/* position: -webkit-sticky; Safari
+		position: sticky;
+		top: 45px; */
+
 	}
 	.leaders-contents ul{
 		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-between;
+		flex-flow: row nowrap;
+		justify-content: space-around;
 		list-style-type: none;
-		padding: 0px 5px;
 	}
-	.leaders-contents li{
+	.leaders-contents ul a{
 		display: block;
-	}
-	.leaders-contents ul li a{
+		width: 100%;
+		text-align: center;
 		text-decoration: none;
-		color: blue;
-		padding: 0px 5px;
+		color: white;
+		padding: 10px 0px;
 	}
 	.leaders-contents ul a:hover{
-		color: red;
+		color: white;
+		background: #333;
+		text-decoration: none;
+
 	}
 	.bio-back{
 		color: red;
@@ -685,7 +697,7 @@ html{
 
 /* 	=======================================================================================
 	=======================================================================================
-				THE ABOUT PAGE
+				THE Contact PAGE
 	=======================================================================================
 	=======================================================================================*/
 	.contact-bost-title h1{
@@ -748,6 +760,7 @@ html{
 		border: none;
 		border-radius: 3px;
 		cursor: pointer;
+		margin-bottom: 10px;
 	}
 	input[type=submit]:hover {
 		background-color: #45a049;
@@ -755,9 +768,9 @@ html{
 	
 	.contact-bost-social-links-grid{
 		display: grid;
-		gap: 10px;
+		gap: 0px;
 		grid-template-columns: auto auto auto auto auto auto;
-		justify-content: center;
+		justify-content: space-evenly;
 		align-content: center;
 		color: #262626;
 	}
@@ -765,10 +778,7 @@ html{
 		display: flex;
 		justify-content: center;
 		align-content: center;
-		width: 200%;
-		height: 200%;
 		font-size: 1rem;
-		background: #ccc;
 		text-decoration: none;
 		text-align: center;
 		}
@@ -799,7 +809,7 @@ html{
 		===================================*/
 
 		.main-grid{
-			width: 85%;
+			width: 100%;
 		}
 		.bio-header{
 			width: 100%;
@@ -835,7 +845,7 @@ html{
 		===================================*/
 	
 		.main-grid{
-			width: 90%;
+			width: 100%;
 		}
 		.grid-papu{
 			gap: 20px;
@@ -900,8 +910,8 @@ html{
 		*{
 			font-size: 14px;
 		}
-		main{
-			width: 95%;
+		html{
+			width: 100%;
 		}
 				
 	/* 	====================================
@@ -1058,10 +1068,10 @@ html{
 
 	/* 	=======================================================================================
 		=======================================================================================
-				MEDIA FOR PHONES ... 480px
+				MEDIA FOR PHONES ... 380px
 		=======================================================================================
 		=======================================================================================*/
-	@media screen and (max-width: 360px) {
+	@media screen and (max-width: 380px) {
 		*{
 			font-size: 8px;
 		}
@@ -1071,12 +1081,12 @@ html{
 			/ LEADERS.HTML
 			===================================*/
 		.bio-img{
-			height: 120px;
-			width: 100px;
+			height: 160px;
+			width: 130px;
 		}
 		.bio-img-flag{
-			height: 120px;
-			width: 160px;
+			height: 160px;
+			width: 200px;
 		}
 		/* 	====================================
 			BOSTBAANDAAR / BIO / BIO.HTML

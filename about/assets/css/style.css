@@ -1,0 +1,551 @@
+*{
+	font-size: 18px;
+	font-family: serif;
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	
+}
+html{
+	background: rgba(77, 158, 233, 0.329);
+	width: 80%;
+	margin: 0px auto;
+}
+@font-face{
+	font-family:'digital-7';
+	src: url('../fonts/digital-7.ttf');
+   }
+/* 	=======================================================================================
+	=======================================================================================
+			  SHOWCASE WEHRE PAGE TITLE IS
+	=======================================================================================
+	=======================================================================================*/
+#showcase{
+	background:  url(../img/afghanistan-flag-4k-grunge-flag-of-afghanistan-asia.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: 100% 0%;
+	padding: 50px;
+}
+#showcase-flexbox{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+#showcase-flexbox h1{
+	color: white;
+	font-size: 3rem;
+	margin-right: 5px;
+}
+.clock{
+	font-family: 'digital-7', sans-serif;
+	text-shadow: rgb(255, 255, 255) 0px 0px 30px !important;
+	text-align: center;
+	font-size: 1.5rem;
+	color: #33ff00;
+	background: #282828;
+	padding: 2px 5px;
+	margin-right: 5px;
+	direction: ltr;
+}
+#lang-button{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-content: flex-start;
+	align-content: flex-start;
+	direction: ltr;
+}
+#lang-button button{
+	font-size: 0.8rem;
+	text-align: center;
+	background: white;
+	padding: 2px 5px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+#lang-button button:hover{
+	color: black;
+	background-color: #d4d4d4;
+}
+#searchbar{
+	text-align: left;
+}
+.search-input{
+	font-size: 1rem;
+	width: 32%;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 3px;
+}
+/* 	=======================================================================================
+	=======================================================================================
+			  NAVIGATIONBAR THE FIRST ONE
+	=======================================================================================
+	=======================================================================================*/
+#holder, #home, #news, #jobs, #afghanistan, #education, #country, #nav-biography,
+#nav-find-location, #blog, .pad a span, .footer ul li span{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	width: 100%;
+}
+#container{
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0px;
+}
+#container ul li{
+	list-style-type: none;
+}
+#wrapper{
+	width: 100%;
+}
+.mega-nav-h3{
+	display: block;
+	width: 100%;
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.nav-title{
+	font-size: 1rem;
+	color: white;
+	text-align: center;
+}
+.pad a{
+	display: block;
+	text-decoration: none;
+	color: white;
+}
+.pad > span{
+	text-decoration: none;
+	font-size: 0.8rem;
+}
+#holder{
+	color: white;
+	background: #333;
+}
+#holder ul{
+	width: 100%;
+}
+#holder  li{
+	text-decoration: none;
+	transition: 0.1s;
+}
+#holder ul li span{
+	padding: 10px 0px;
+	border-bottom: 3px solid #333;
+}
+.pad > a:hover, .using > li:hover > a > span{
+	color: black;
+	background: rgb(218, 218, 218);
+}
+#home ul li a:hover span, .using > li:hover > a > span{
+	border-bottom: 3px solid #CA3723;
+	transition: 0.1s;
+}
+#news ul li a:hover span, .using > li:hover > a > span{
+	border-bottom: 3px solid rgb(207, 86, 157);
+	transition: 0.1s;
+}
+.sub-wrapper-news, .h3-nav-news{
+	border-bottom: 3px solid rgb(207, 86, 157);
+}
+.sub-wrapper-news a:hover{
+	color: rgb(207, 86, 157);
+	transition: 0.3s;
+	border-right: 2px solid #f27d0c;
+	border-left: 2px solid #f27d0c;
+}
+#jobs ul li a:hover span, #jobs .using > li:hover > a > span{
+	border-bottom: 3px solid #6159CC;
+	transition: 0.1s;
+}
+.sub-wrapper-jobs, .h3-nav-jobs{
+	border-bottom: 3px solid #6159CC;
+}
+.sub-wrapper-jobs a:hover{
+	color: #6159CC;
+	transition: 0.3s;
+	border-right: 2px solid #f27d0c;
+	border-left: 2px solid #f27d0c;
+}
+#afghanistan ul li a:hover span, #afghanistan .using > li:hover > a > span{
+	border-bottom: 3px solid rgb(87, 163, 116);
+	transition: 0.1s;
+}
+.sub-wrapper-afghanistan, .h3-nav-afghanistan{
+	border-bottom: 3px solid rgb(87, 163, 116);
+}
+.sub-wrapper-afghanistan a:hover{
+	color: rgb(87, 163, 116);
+	transition: 0.3s;
+	border-right: 2px solid #f27d0c;
+	border-left: 2px solid #f27d0c;
+}
+#education ul li a:hover span, #education .using > li:hover > a > span{
+	border-bottom: 3px solid rgb(180, 177, 14);
+	transition: 0.1s;
+}
+.sub-wrapper-education, .h3-nav-education{
+	border-bottom: 3px solid rgb(180, 177, 14);
+}
+.sub-wrapper-education a:hover{
+	color: rgb(180, 177, 14);
+	transition: 0.3s;
+	border-right: 2px solid #f27d0c;
+	border-left: 2px solid #f27d0c;
+}
+#country ul li a:hover span, #country .using > li:hover > a > span{
+	border-bottom: 3px solid #CA3723;
+	transition: 0.1s;
+}
+.sub-wrapper-country, .h3-nav-country{
+	border-bottom: 3px solid #CA3723;
+}
+.sub-wrapper-country a:hover{
+	color: #CA3723;
+	transition: 0.3s;
+	border-right: 2px solid #f27d0c;
+	border-left: 2px solid #f27d0c;
+}
+#nav-biography ul li a:hover span, #nav-biography .using > li:hover > a > span{
+	border-bottom: 3px solid #1CA6E0;
+	transition: 0.1s;
+}
+.sub-wrapper-nav-biography, .h3-nav-biography{
+	border-bottom: 3px solid #1CA6E0;
+}
+.sub-wrapper-nav-biography a:hover{
+	color: #1CA6E0;
+	transition: 0.3s;
+	border-right: 2px solid #f27d0c;
+	border-left: 2px solid #f27d0c;
+}
+#nav-find-location ul li a:hover span, #nav-find-location .using > li:hover > a > span{
+	border-bottom: 3px solid rgb(181, 21, 230);
+	transition: 0.1s;
+}
+.sub-wrapper-nav-find-location, .h3-nav-find-location{
+	border-bottom: 3px solid rgb(181, 21, 230);
+}
+.sub-wrapper-nav-find-location a:hover{
+	color: rgb(181, 21, 230);
+	transition: 0.3s;
+	border-right: 2px solid #f27d0c;
+	border-left: 2px solid #f27d0c;
+}
+#dev ul li a:hover span{
+	border-bottom: 3px solid #f27d0c;
+	transition: 0.1s;
+}
+#blog ul li a:hover span{
+	border-bottom: 3px solid #777777;
+	transition: 0.1s;
+}
+.sub-wrapper-home, .sub-wrapper-news, .sub-wrapper-jobs, .sub-wrapper-afghanistan, .sub-wrapper-education, .sub-wrapper-country, 
+.sub-wrapper-nav-biography, .sub-wrapper-nav-find-location{
+	width: 100%;
+	height: auto;
+	background: #262626;
+	position: absolute;
+	padding: 20px;
+}
+#holder ul li > ul{
+	position: absolute;
+	left: 0px;
+	transform: perspective(1000px) rotatex(-90deg);
+}
+#holder ul li:hover ul{
+	overflow: visible;
+	left: 0px;
+	transform: perspective(1000px) rotatex(0deg);
+}
+.sub-hol{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-content: center;
+	width: 100%;
+}
+.sub-hol div ul li a{
+	display: block;
+	width: 100%;
+	padding: 0px 10px;
+	font-size: 1rem;
+	transition: 0.3s;
+	border-right: 2px solid #262626;
+	border-left: 2px solid #262626;
+}
+.sub-right-box{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-content: center;	
+}
+.sub-m{
+	margin: 0px 10px;
+}
+.sub-m-box{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-content: center;
+	padding: 0px 10px 0px 10px;
+	border-right: 1px solid #333;
+	border-left: 1px solid #333;	
+}
+.sub-left-box{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-content: center;
+}
+.using .active{
+	color: black;
+	background: rgb(218, 218, 218);
+}
+/* 	=======================================================================================
+	=======================================================================================
+			  GENERAL MAIN
+	=======================================================================================
+	=======================================================================================*/
+	main{
+		background: #e6e6e6;
+		width: 100%;
+		margin: 0px auto;
+		padding: 20px 20px;
+		border-top: none;
+	}
+/* 	=======================================================================================
+	=======================================================================================
+			  GENERAL FOOTER
+	=======================================================================================
+	=======================================================================================*/
+.footer{
+	color: white;
+	background: #333;
+	padding-bottom: 5px;
+	margin-top: 10px;
+}
+.footer ul{
+	display: flex;
+	flex-flow: row nowrap;
+	align-content: center;
+}
+.footer ul li{
+	list-style: none;
+	width: 100%;
+}
+.footer ul li a{
+	text-decoration: none;
+	text-align: center;
+}
+.footer ul li span{
+	padding: 10px;
+	border-bottom: 3px solid #333;
+}
+.footer ul a:hover span{
+	color: black;
+	background: rgb(218, 218, 218);
+	transition: 0.1s;
+	border-bottom: 3px solid green;
+}
+.footer ul a:hover{
+	color: black;
+	background: rgb(218, 218, 218);
+}
+.footer ul .active {
+	color: black;
+	background: rgb(218, 218, 218);
+}
+.footer p{
+	font-size: 1rem;
+	text-align: center;
+	margin: 0px auto;
+	padding: 10px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 	=======================================================================================
+	=======================================================================================
+			  ABOUT PAGE
+	=======================================================================================
+	=======================================================================================*/
+	.about-main{
+		padding: 30px 20%;
+	}
+	.wellcome-text h1, p{
+		font-size: 1.5rem;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 	=======================================================================================
+	=======================================================================================
+			  MEDIA FOR PHONES ... 1280px
+	=======================================================================================
+	=======================================================================================*/
+	@media screen and (max-width: 1280px) {
+		*{
+			font-size: 16px;
+		}
+		.about-main{
+			padding: 30px 10%;
+		}
+	}
+/* 	=======================================================================================
+	=======================================================================================
+				MEDIA FOR PHONES ... 980px
+	=======================================================================================
+	=======================================================================================*/
+	@media screen and (max-width: 980px) {
+		*{
+			font-size: 14px;
+		}
+		html{
+			width: 100%;
+		}
+		.about-main{
+			padding: 30px 5%;
+		}
+	}
+/* 	=======================================================================================
+	=======================================================================================
+			  MEDIA FOR PHONES ... 768px
+	=======================================================================================
+	=======================================================================================*/
+	@media screen and (max-width: 768px) {
+		*{
+			font-size: 12px;
+		}
+		.nav-title{
+			font-size: 0.7rem;
+		}
+		#lang-button button{
+			font-size: 0.7rem;
+		}
+		main{
+			width: 100%;
+		}
+	}
+/* 	=======================================================================================
+	=======================================================================================
+			  MEDIA FOR PHONES ... 540px
+	=======================================================================================
+	=======================================================================================*/
+	@media screen and (max-width: 540px) {
+		*{
+			font-size: 10px;
+		}
+		#holder ul li span{
+			padding: 5px 2px;
+		}
+	}
+/* 	=======================================================================================
+	=======================================================================================
+			MEDIA FOR PHONES ... 380px
+	=======================================================================================
+	=======================================================================================*/
+	@media screen and (max-width: 380px) {
+		*{
+			font-size: 8px;
+		}
+	}
